@@ -1,0 +1,26 @@
+select,button{
+    width: 300px;
+}
+
+table{
+    table-layout: fixed;
+}
+.content-center{
+    text-align: center;
+}
+#section_one{
+    display: none;
+}
+#button{
+    display: none;
+}
+table th{
+    background-color: rgb(127,127,127);
+    color: rgb(245,245,245);
+}
+table tr:nth-child(even){
+    background-color: rgb(255,255,255);
+}
+table tr:nth-child(odd){
+    background-color: rgb(210,210,210);
+}
