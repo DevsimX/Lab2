@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab07</title>
+    <script type="text/javascript" src="js/Lab07.js" rel="script"></script>
+    <link type="text/css" rel="stylesheet" href="css/Lab07.css">
+</head>
+<body>
+<div class="content-center">
+    <form action="" method="post">
+        <label>
+            <select id="select_one" onchange="check_select_one()">
+                <option>SELECT ONE</option>
+                <option>CREATE TABLE</option>
+                <option>ADD ROW</option>
+                <option>DELETE ROW</option>
+                <option>DELETE TABLE</option>
+            </select>
+        </label>
+    </form>
+    <div id="section_one">
+        <input type="text" placeholder="Table Name" id="table_input" onchange="check_table_name()">
+        <input type="number" placeholder="Columns Numbers" onchange="addInput()" id="number_input">
+    </div>
+    <div id="section_two"></div>
+    <div id="button"><button onclick="commit()">commit</button></div>
+    <form action="" method="post">
+        <label>
+            <select id="select_two" onchange="change_table()">
+                <option>SELECT (default: last created)</option>
+            </select>
+        </label>
+    </form>
+    <table id="table" align="center">
+
+    </table>
+</div>
+</body>
+</html>
